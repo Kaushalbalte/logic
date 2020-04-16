@@ -1,0 +1,22 @@
+Linear Search
+#include<stdio.h> int linear_s(int arr[],int, int); void main()
+{
+int arr[10]; int i, n = 10, x, r;
+for (i = 0; i <= 9; i++) scanf_s("%d", &arr[i]);
+printf("Enter a number to be searched.\n");
+scanf_s("%d", &x); r = linear_s(arr,n, x);
+if (r)
+printf("Number found", r);
+else
+printf("Number not found."); getch();
+}
+int linear_s(int arr[],int n, int x)
+{
+int i;
+for (i = 0; i < 10; i++)
+{
+if (arr[i] == x) return 1;
+break;
+}
+return 0;
+}
